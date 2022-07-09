@@ -33,4 +33,15 @@ function splitIntoString(num) {
   return String(num).split('');
 }
 
-console.log(splitIntoArray(9876)); //[9, 8, 7, 6]
+const arr3 = splitIntoArray(9876);
+console.log(arr3); //[9, 8, 7, 6]
+
+console.log(typeof arr3[0]); //number ?
+
+// toString();
+const myNum = 1234;
+const numToString = myNum.toString().split('');
+console.log(numToString); //["1", "2", "3", "4"]
+
+let stringToNum = numToString.map(Number);
+console.log(stringToNum); //[1, 2, 3, 4]
